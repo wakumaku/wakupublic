@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Game of Life</title>
+<script type="text/javascript" src="juego.js"></script>
+<link type="text/css" media="screen" rel="stylesheet" href="juego.css">
+</head>
+<body onload="resetJoc();">
+	<div class="dvBody">
+		<div class="titol">El joc de la vida</div>
+		<button onclick="execJoc();">Juga</button>
+		<button onclick="resetJoc();">Reset</button>
+		<div id="tablero"></div>
+		<div>
+		<div style="float:left">
+			<canvas id="canvas" width="100" height="100"></canvas>
+			<div>
+				<div style="float:left;width:185px;">
+					<pre id="log"></pre>
+				</div>
+				<div style="float:left;margin-top:7px;">
+					<canvas id="canvasGraf" width="100" height="100"></canvas>
+				</div>
+				<div style="clear:both;"></div>  
+			</div>
+		</div>
+		<div style="float:left;">
+			<div style="text-align:center">Puntuació</div>
+			<pre id="logros" style="border-right:1px solid gray;border-bottom:1px solid gray;border-top:1px solid gray;margin-top:2px;">
+
+			</pre>
+		</div>
+		<div style="clear:both;"></div>
+		</div>
+		<pre>http://en.wikipedia.org/wiki/Conway's_Game_of_Life
+1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+2. Any live cell with two or three live neighbours lives on to the next generation.
+3. Any live cell with more than three live neighbours dies, as if by overcrowding.
+4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</pre>
+	</div>
+</body>
+</html>
