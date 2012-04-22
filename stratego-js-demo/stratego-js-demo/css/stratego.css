@@ -1,0 +1,87 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family:monospace;
+}
+
+.bodyTablero{
+	width:456px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.tablero{
+	border:	1px gray solid;
+	width:456px;  /* (40 + 5 + 2)*8 + 28 */
+	height:456px;
+}
+
+.celda{
+	float:left;
+	border: 1px gray solid;
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+}
+	.color1{
+		color:white;
+		background-color: black;
+	}
+	.color2{
+		color:black;
+		background-color: white;
+	}
+
+.celda_coord{
+	font-weight: bold;
+	float:left;
+	border: 1px gray solid;
+	padding:5px;
+}
+
+.celda_coordX{
+	text-align:center;
+	width: 40px;
+	height:28px;
+}
+.celda_coordY{
+	text-align:center;
+	height: 35px;
+	width:28px;
+	padding-top:15px;
+	padding-bottom: 0px;
+}
+	.colorH1{
+		color: black;
+		background-color: gray;
+	}
+	.colorH2{
+		color:white;
+		background-color: darkgray;
+	}
+	
+	
+.ficha{
+	width:35px;
+	height:35px;
+}
+	.azul{
+		background-color: navy;
+	}
+	.roja{
+		background-color: red;
+	}
+	
+.bandera{
+
+}
+
+.soldado{
+	
+}
+
+.bomba{
+	
+}
+
+.cliar{clear:both;}
